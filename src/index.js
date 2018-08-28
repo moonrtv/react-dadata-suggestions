@@ -244,6 +244,7 @@ class DadataSuggestions extends Component {
           hint={ this.props.hint }
           visible={ showSuggestions }
           onSelect={this.handleSelect}
+          onTouchStart={this.handleSelect}
           selected={selected}
           suggestionsFormatter={this.suggestionsFormatter}
           searchWords={ this.searchWords }

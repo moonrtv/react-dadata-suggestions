@@ -16,6 +16,7 @@ const SuggestionsList = (props) => {
               index={ index }
               selected={ index === selected }
               onSelect={ props.onSelect(index) }
+              onTouchStart={ props.onSelect(index) }
               searchWords = { props.highlighting ? props.searchWords() : [] }
               highlighting = { props.highlighting }
               value = { props.suggestionsFormatter(suggestion) }
